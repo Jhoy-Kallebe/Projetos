@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <link rel="stylesheet" href="sltyle.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="elements">
+            <div class="acao">
+                <input class="nome" type="text" placeholder="Digiete seu nome">
+                <input class="btn" type="button" value="Clique aqui" onclick="clicar()">
+            </div>
+            <label id="setNome" for="">Seu nome irá aparecer aqui</label>
+        </div>
+    </div>
+
+    <script>
+        
+        var nom = document.querySelector('.nome');
+        var setNome = document.getElementById('setNome');
+
+        function clicar(){
+            if(nom.value === ""){
+                nom.style.border = '1px solid red';
+                setNome.innerText = `Preencha o campo!`
+            } else{
+                setNome.innerText = `Bem vindo, ${nom.value}!`
+                nom.style.border = 'none';
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
