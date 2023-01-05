@@ -23,4 +23,10 @@ section {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
     margin: 20px;
     color: black;
+    display: flex;
+    text-align: center;
+}
+
+img {
+    width: 200px;
 }
