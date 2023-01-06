@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Vamos Contar</h1></header>
+    <section>
+        <div>
+            <label for="">Inicio:
+                <input type="number" name="txtNum" id="txtNum">
+            </label>
+            <label for="">Fim:
+                <input type="number" name="txtNumFim" id="txtNumFim">
+            </label>
+            <label for="">Passo: 
+                <input type="number" name="txtPasso" id="txtPasso">
+            </label>
+            <input type="button" value="Contar" onclick="clicou()">
+        </div>
+        <div id="res">Peparando a contagem</div>
+    </section>
+    <footer>
+        <p>© Jhoy Kallebe</p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
