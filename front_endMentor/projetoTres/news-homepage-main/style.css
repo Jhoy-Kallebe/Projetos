@@ -11,8 +11,8 @@ header {
     display: flex;
     height: 10%;
     justify-content: space-between;
-    padding: 4% 10% 2%;
-    max-width: 1400px;
+    padding: 4% 0 2%;
+    width: 80%;
     margin: auto;
 }
 
@@ -47,48 +47,37 @@ main {
     display: grid;
     grid-template-areas: 
         "A A B"
-        "A A B"
-        "C C C"
+        "A1 A2 B"
+        "C C1 C2"
     ;
-    margin: 0 10%;
     gap: 30px;
+    padding: 0 10%;
 }
 
-main section:nth-child(1) {
+main #image {
     grid-area: A;
-    display: grid;
-    grid-template-areas: 
-        "A1 A1"
-        "B1 B2"
-    ;
-
-    gap: 30px;
-    position: relative;
-}
-
-main section:nth-child(1) img {
-    grid-area: A1;
     width: 100%;
 }
 
-main section:nth-child(1) h1 {
-    font-size: 60px;
+main h1 {
+    grid-area: A1;
+    font-size: 50px;
     color: hsl(240, 100%, 5%);
     font-weight: 800;
-    line-height: 90%;
-    grid-area: B1;
+    line-height: 100%;
 }
 
-main section:nth-child(1) div  {
-    grid-area: B2;
+main #description  {
+    grid-area: A2;
+    position: relative;
 }
 
-main section:nth-child(1) div p {
+main #description p {
     font-size: 15px;
     color: hsl(236, 13%, 42%);
 }
 
-main section:nth-child(1) div button {
+main #description button {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -100,51 +89,57 @@ main section:nth-child(1) div button {
     bottom: 0;
 }
 
-main section:nth-child(2) {
+main section {
     grid-area: B;
     padding: 20px 25px 35px;
     color: hsl(36, 100%, 99%);
     background-color: hsl(240, 100%, 5%);
 }
 
-main section:nth-child(2) div:not(:last-child) {
+main section div:not(:last-child) {
     margin: 30px 0;
     border-bottom: 1px solid hsla(240, 2%, 49%, 0.774);
     padding-bottom: 30px;
 }
 
-main section:nth-child(2) h2 {
+main section h2 {
     color: hsl(35, 77%, 62%);
     font-size: 37px;
     margin-top: 10px;
 }
 
-main section:nth-child(2) h3 {
+main section h3 {
     font-weight: 800;
     margin-bottom: 10px;
 }
 
-main section:nth-child(2) p {
+main section p {
     color: hsl(233, 8%, 79%);
     font-size: 15px;
 }
 
-section:last-child {
+#pb-one {
     grid-area: C;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
 }
 
-section:last-child img{
+#pb-two {
+    grid-area: C1;
+}
+
+#pb-three {
+    grid-area: C2;
+}
+
+.publications img{
     height: 130px;
 }
 
-section:last-child .publications{
+.publications{
     display: flex;
+    margin-top: 50px;
 }
 
-section:last-child .publications div{
+.publications div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -152,21 +147,20 @@ section:last-child .publications div{
     padding: 0 0 5px;
 }
 
-section:last-child .publications div h2{
+.publications div h2{
     font-weight: 700;
     font-size: 35px;
     color: hsl(233, 8%, 79%);
 }
 
-section:last-child .publications div h3{
+.publications div h3{
     color: hsl(240, 100%, 5%);
 }
 
-section:last-child .publications div p{
+.publications div p{
     color: hsl(236, 13%, 42%);
     font-size: 15px;
 }
-
 
 
 footer {
