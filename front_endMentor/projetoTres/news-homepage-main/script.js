@@ -1,4 +1,4 @@
-function open (){
-    let header = document.querySelector('.header');
-    header.classList.toggle('active');
+function toggleMode() {
+    const html = document.documentElement;
+    html.classList.toggle('active');
 }
