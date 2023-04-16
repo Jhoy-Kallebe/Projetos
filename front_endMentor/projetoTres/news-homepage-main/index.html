@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header active">
     <div id="logo">W.</div>
+    <ion-icon class="menu hamburguer" name="menu-outline" onclick="open()"></ion-icon>
     <nav>
+      <ion-icon class="menu close" name="close-outline" onclick="open()"></ion-icon>
       <ul>
         <li>Home</li> 
         <li>New</li>
@@ -82,5 +84,9 @@
     <p>Challenge by&nbsp; <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by&nbsp; <a href="#">Your Name Here</a>.</p>
   </footer>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
